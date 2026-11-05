@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data: blob:; connect-src 'none'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Grok Bot</title>
+  <link rel="stylesheet" href="share-picker.css">
+</head>
+<body>
+  <div id="panel">
+    <header id="head">
+      <span id="title">分享给</span>
+      <span id="hint"></span>
+    </header>
+    <div id="list" role="listbox" aria-label="Bots"></div>
+    <p id="empty" hidden>没有 Bot 开启微信分享。</p>
+    <footer id="foot">
+      <button id="cancel" type="button">取消</button>
+      <button id="send" type="button">发送</button>
+    </footer>
+  </div>
+  <script type="module" src="share-picker.js"></script>
+</body>
+</html>
